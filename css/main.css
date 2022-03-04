@@ -49,7 +49,7 @@ body {
 .mainImages {
   position: relative;
   width: 98vw;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -75,7 +75,7 @@ body {
   z-index: 3;
 }
 .intro {
-    width: 60vw;
+    max-width: 85vw;
     padding: 0.5rem;
     color : #aaa;
     font-variant: small-caps;
@@ -83,6 +83,20 @@ body {
     text-align: center;
     margin-left : auto;
     margin-right : auto;
+}
+.btn-start {
+    width: 100%;
+    padding: 0.5rem;
+    color : #aaa;
+    background : transparent;
+    font-variant: small-caps;
+    border : 0.15rem solid #606060;
+    text-align: center;
+    margin-top : 1rem;
+}
+.btn-start:hover, .btn-start:focus {
+    background : #606060;
+    color : white;
 }
 
 /* ========== Breakpoints ============ */
@@ -105,6 +119,6 @@ body {
     font-weight: 300;
   }
   .mainImages {
-    height: 75vh;
+    height: 65vh;
   }
 }
