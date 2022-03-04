@@ -23,6 +23,7 @@ const imageSlide = () => {
 
 setInterval(imageSlide, 2500); //initiate the function and run it every 2.5 seconds
 
+
 /* ================== Button Actions ================== */
 const startBtn = document.getElementById("startCourse"); //Start button
 const Menu = document.getElementById("menu"); //Menu page
@@ -30,3 +31,11 @@ const Menu = document.getElementById("menu"); //Menu page
 startBtn.addEventListener("click", () => {
   Menu.scrollIntoView({ behavior: "smooth" });
 });
+
+
+/* =============== MENU ACTIONS ================= */
+const item = document.querySelectorAll("item")
+const progressBar = document.getElementById("progressBar");
+const progressContainer = document.getElementById("progressContainer");
+var totalProgress = 4;
+var currentProgress = 0;
