@@ -63,20 +63,20 @@ top : 0;
   position: absolute;
   max-width: 100%;
 }
-.mainImages img:nth-child(1) {
+img#img1.mainImage {
   z-index: 0;
-  display: none;
 }
-.mainImages img:nth-child(2) {
+img#img2.mainImage {
   z-index: 1;
-  display: none;
 }
-.mainImages img:nth-child(3) {
+img#img3.mainImage {
   z-index: 2;
-  display: none;
 }
-.mainImages img:nth-child(4) {
+img#img4.mainImage {
   z-index: 3;
+}
+.hidden {
+    display: none;
 }
 .intro {
     max-width: 85vw;
