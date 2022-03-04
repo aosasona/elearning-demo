@@ -26,6 +26,8 @@ body {
 
 /* Top Bar */
 #mainHeader {
+position: sticky;
+top : 0;
   width: 100%;
   text-align: center;
   font-weight: 400;
@@ -49,7 +51,7 @@ body {
 .mainImages {
   position: relative;
   width: 98vw;
-  height: 70vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   justify-items: center;
