@@ -172,7 +172,8 @@ img#img4.mainImage {
 .error {
   animation: 600ms notification ease-in-out forwards;
   position: absolute;
-  top: 5rem;
+  z-index : 0;
+  top: 1rem;
   right: 1rem;
   background: rgb(255, 145, 145);
   color: rgb(190, 0, 0);
@@ -187,7 +188,8 @@ img#img4.mainImage {
 .success {
   animation: 600ms notification ease-in-out forwards;
   position: absolute;
-  top: 5rem;
+  z-index : 0;
+  top: 1rem;
   right: 1rem;
   background: rgb(185, 255, 210);
   color: rgb(0, 145, 85);
@@ -218,6 +220,7 @@ img#img4.mainImage {
 .info img {
   animation: 2600ms bounce linear infinite;
   max-width: 95%;
+  z-index: 1;
 }
 .info__full {
   margin-top: 4.5rem;
