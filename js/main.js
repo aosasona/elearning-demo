@@ -28,5 +28,5 @@ const startBtn = document.getElementById("startCourse"); //Start button
 const Menu = document.getElementById("menu"); //Menu page
 
 startBtn.addEventListener("click", () => {
-  Menu.scrollIntoView();
+  Menu.scrollIntoView({ behavior: "smooth" });
 });

@@ -24,9 +24,13 @@
   </head>
   <body>
     <!-- Formated using Prettier extension in VS code for readability -->
-
+    <h1 id="mainHeader">
+        <img src="/images/corporate-logo.png" alt="Logo" />Training Course
+      </h1>
     <section id="fullpage">
+        
       <div class="section">
+          
         <div class="mainImages">
           <img
             src="/images/L460_Range_Rover.png"
@@ -66,11 +70,31 @@
       </div>
 
       <!-- Car Selection page-->
-      <div class="section" id="menu">Hello world</div>
+      <div class="section" id="menu">
+          <h3>Select a car below</h3>
+        <div class="menu__Items">
+          <div class="menu__Item" id="item1">
+            <img src="/images/L460_Range_Rover.png" alt="item1" />
+            <p>L460 Range Rover</p>
+          </div>
+
+          <div class="menu__Item" id="item1">
+            <img src="/images/L462_Discovery.png" alt="item1" />
+            <p>L462 Discovery</p>
+          </div>
+
+          <div class="menu__Item" id="item1">
+            <img src="/images/L560_Range_Rover_Velar.png" alt="item1" />
+            <p>L560 Range Rover Velar</p>
+          </div>
+          <div class="menu__Item" id="item1">
+            <img src="/images/L663_Defender.png" alt="item1" />
+            <p>L663 Defender</p>
+          </div>
+        </div>
+        <div class="progress__Container"><div class="progress__Bar"></div></div>
+      </div>
     </section>
-    <h1 id="mainHeader">
-      <img src="/images/corporate-logo.png" alt="Logo" />Training Course
-    </h1>
 
     <!-- Fullpage JavaScript-->
     <script
@@ -87,9 +111,8 @@
         autoScrolling: true,
         scrollHorizontally: false,
         keyboardScrolling: false,
-        lazyLoading: true,
-        fixedElements: "#mainHead",
         dragAndMove: false,
+        scrollBar: false,
       });
 
       fullpage_api.setAllowScrolling(false);

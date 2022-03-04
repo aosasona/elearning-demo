@@ -27,7 +27,7 @@ body {
 
 /* Top Bar */
 #mainHeader {
-  position: fixed;
+  position: relative;
   z-index: 0;
   top: 0;
   width: 100%;
@@ -55,7 +55,8 @@ body {
 .mainImages {
   position: relative;
   width: 98vw;
-  height: 65vh;
+  min-height: 50vh;
+  max-height: 65vh;
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -90,6 +91,7 @@ img#img4.mainImage {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
 }
 .btn-start {
   width: 100%;
@@ -106,6 +108,46 @@ img#img4.mainImage {
   background: #606060;
   color: white;
 }
+#menu h3 {
+    font-weight : 300;
+    padding: 0.5rem;
+    width : 90%;
+    text-align: center;
+    color : #aaa;
+    border: 0.15rem solid #aaa;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu__Items {
+  max-height: 90vh;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 0.5rem;
+}
+
+.menu__Item {
+  border: 0.15rem solid #606060;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.menu__Item img {
+  max-width: 100%;
+}
+.menu__Item p {
+  text-align: center;
+  color: #aaa;
+  width: 90%;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu__Item:hover,
+.menu__Item:focus {
+  animation : 400ms menuHover ease-in-out forwards;
+}
 
 /* ========== Breakpoints ============ */
 
@@ -117,19 +159,61 @@ img#img4.mainImage {
     padding-bottom: 15px;
     padding-top: 15px;
   }
+  #mainHeader img {
+    max-width: 10%;
+  }
   .mainImages {
-    height: 60vh;
+    min-height: 50vh;
+    max-height: 70vh;
+  }
+  .menu__Items {
+    grid-gap: 0.9rem;
+    max-height: 90vh;
+  }
+
+  .menu__Item {
+    border: 0.2rem solid #606060;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+  .menu__Item img {
+    max-width: 100%;
+  }
+  .menu__Item p {
+    margin-top: 2.1rem;
+    font-size: 1.3rem;
   }
 }
 
 /* Laptops and other larger screens */
 @media (min-width: 1280px) {
   #mainHeader {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
   }
+  #mainHeader img {
+    max-width: 10%;
+  }
   .mainImages {
-    height: 65vh;
+    min-height: 50vh;
+    max-height: 70vh;
+  }
+  .menu__Items {
+    grid-gap: 2rem;
+    max-height: 100vh;
+  }
+
+  .menu__Item {
+    border: 0.2rem solid #606060;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+  }
+  .menu__Item img {
+    max-width: 100%;
+  }
+  .menu__Item p {
+    margin-top: 2.1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -145,4 +229,10 @@ img#img4.mainImage {
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes menuHover {
+    100% {
+        border: 0.2rem dashed gold;
+        transform: scale(0.9);
+    }
 }
