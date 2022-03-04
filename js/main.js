@@ -20,4 +20,4 @@ const imageSlide = () => {
   mainImages[currentIndex].style.display = "block";
 };
 
-setInterval(imageSlide, 2000); //initiate the function and run it every 2 seconds
+setInterval(imageSlide, 2500); //initiate the function and run it every 2.5 seconds
