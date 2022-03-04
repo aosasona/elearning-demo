@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "JLR Emeric ExtraLight";
+  src: url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.eot");
+  src: url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/9662d53a0d10077a4c6c0e9c897eeade.svg#JLR Emeric ExtraLight")
+      format("svg");
+}
+* {
+  font-family: "Helvetica Neue", "JLR Emeric ExtraLight", "Segoe UI", Roboto, Oxygen, "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #121212;
+  color: white;
+  max-width: 100vw;
+  margin: 0;
+}
+
+/* Top Bar */
+#mainHeader {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-family: "JLR Emeric ExtraLight";
+  font-size: 1.5rem;
+  background: #191919;
+  color: #707070;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#mainHeader img {
+  max-width: 20%;
+}
+
+/* Main Page */
+.mainImages {
+  position: relative;
+  width: 98vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.mainImages img {
+  position: absolute;
+  max-width: 100%;
+}
+.mainImages img:nth-child(1) {
+  z-index: 0;
+  display: none;
+}
+.mainImages img:nth-child(2) {
+  z-index: 1;
+  display: none;
+}
+.mainImages img:nth-child(3) {
+  z-index: 2;
+  display: none;
+}
+.mainImages img:nth-child(4) {
+  z-index: 3;
+}
+.intro {
+    width: 60vw;
+    padding: 0.5rem;
+    color : #aaa;
+    font-variant: small-caps;
+    border : 0.15rem solid #606060;
+    text-align: center;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+/* ========== Breakpoints ============ */
+
+/* Tablet Size and > */
+@media (min-width: 768px) {
+  #mainHeader {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+  .mainImages {
+    height: 60vh;
+  }
+}
+
+/* Laptops and other larger screens */
+@media (min-width: 1280px) {
+  #mainHeader {
+    font-size: 5rem;
+    font-weight: 300;
+  }
+  .mainImages {
+    height: 75vh;
+  }
+}
