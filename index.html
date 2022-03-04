@@ -4,14 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-learning Demo</title>
+    <meta name="description" content="Single-page e-learning demo for JLR" />
+    <title>JLR E-learning Demo</title>
     <link rel="stylesheet" href="/css/main.css" />
     <link
       rel="shortcut icon"
       href="/images/corporate-logo.png"
       type="image/x-icon"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    DECIDED NOT TO USE TAILWINDCSS
+    -->
 
     <!-- Fullpage CSS-->
     <link
@@ -27,10 +31,15 @@
 
     <!--Error/Success Message-->
     <div class="hidden" id="notification"></div>
+
+    <!--Top Navbar-->
     <h1 id="mainHeader">
       <img src="/images/corporate-logo.png" alt="Logo" />Training Course
     </h1>
+
+    <!--Fullpage container-->
     <section id="fullpage">
+      <!--Main section-->
       <div class="section">
         <div class="mainImages">
           <img
@@ -59,6 +68,7 @@
           />
         </div>
 
+        <!--Course intro-->
         <div class="intro">
           This short course will give you brief information about the following
           models: L460, L462, L560 & L663<button
@@ -167,6 +177,7 @@
       </div>
     </section>
 
+    <!--Progress bar-->
     <div class="centerDiv">
       <div class="progress__Container" id="progressContainer">
         <div class="progress__Bar" id="progressBar"></div>

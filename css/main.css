@@ -25,7 +25,7 @@ body {
   margin: 0;
 }
 
-/* Top Bar */
+/* ===== Top Nav Bar ===== */
 #mainHeader {
   position: relative;
   z-index: 0;
@@ -51,7 +51,7 @@ body {
   padding-right: 1rem;
 }
 
-/* Main Page */
+/* ===== Main Page ===== */
 .mainImages {
   position: relative;
   width: 98vw;
@@ -109,6 +109,8 @@ img#img4.mainImage {
   background: #606060;
   color: white;
 }
+
+/* ===== MODULE SELECTION PAGE ==== */
 #menu h3 {
   font-weight: 300;
   padding: 0.5rem;
@@ -156,7 +158,7 @@ img#img4.mainImage {
   position: fixed;
   bottom: 1rem;
   width: 80vw;
-  height: 0.8rem;
+  height: 0.4rem;
   background: #606060;
 }
 .progress__Bar {
@@ -169,10 +171,12 @@ img#img4.mainImage {
   justify-content: center;
   align-items: center;
 }
+
+/* ====== NOTIFICATIONS ====== */
 .error {
   animation: 600ms notification ease-in-out forwards;
   position: absolute;
-  z-index : 0;
+  z-index: 0;
   top: 1rem;
   right: 1rem;
   background: rgb(255, 145, 145);
@@ -188,7 +192,7 @@ img#img4.mainImage {
 .success {
   animation: 600ms notification ease-in-out forwards;
   position: absolute;
-  z-index : 0;
+  z-index: 0;
   top: 1rem;
   right: 1rem;
   background: rgb(185, 255, 210);
@@ -204,6 +208,8 @@ img#img4.mainImage {
 .notificationOut {
   animation: 600ms notificationOut ease-out forwards;
 }
+
+/* ====== MODULE PAGE ====== */
 .info {
   position: relative;
   width: 95vw;
@@ -342,12 +348,15 @@ img#img4.mainImage {
     transform: translateY(0);
   }
 }
+/* Module selection animation */
 @keyframes menuHover {
   100% {
     border: 0.2rem dashed gold;
     transform: scale(0.9);
   }
 }
+
+/* Notifications Animations */
 @keyframes notification {
   0% {
     transform: translateX(10rem);
@@ -364,6 +373,8 @@ img#img4.mainImage {
     transform: translateX(20rem);
   }
 }
+
+/* Module page image bouncing animation */
 @keyframes bounce {
   0% {
     transform: translateY(1rem);
