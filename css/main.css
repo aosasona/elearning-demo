@@ -110,14 +110,14 @@ img#img4.mainImage {
   color: white;
 }
 #menu h3 {
-    font-weight : 300;
-    padding: 0.5rem;
-    width : 90%;
-    text-align: center;
-    color : #aaa;
-    border: 0.15rem solid #aaa;
-    margin-left: auto;
-    margin-right: auto;
+  font-weight: 300;
+  padding: 0.5rem;
+  width: 90%;
+  text-align: center;
+  color: #aaa;
+  border: 0.15rem solid #aaa;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu__Items {
   max-height: 90vh;
@@ -148,92 +148,90 @@ img#img4.mainImage {
 }
 .menu__Item:hover,
 .menu__Item:focus {
-  animation : 400ms menuHover ease-in-out forwards;
+  animation: 400ms menuHover ease-in-out forwards;
 }
 
 /* ===== PROGRESS BAR ===== */
 .progress__Container {
   position: fixed;
-  bottom : 1rem;
-  width : 80vw;
-  height : .8rem;
+  bottom: 1rem;
+  width: 80vw;
+  height: 0.8rem;
   background: #606060;
 }
 .progress__Bar {
-  width : 0%;
-  height : 100%;
-  background : gold;
+  width: 0%;
+  height: 100%;
+  background: gold;
 }
 .centerDiv {
   display: flex;
-  justify-content : center;
+  justify-content: center;
   align-items: center;
 }
 .error {
-  animation : 600ms notification ease-in-out forwards;
-  position : absolute;
-  top : 5rem;
-  right : 1rem;
-  background : rgb(255, 145, 145);
-  color : rgb(190, 0, 0);
-  border : .05rem solid rgb(190, 0, 0);
-  font-weight : 400;
-  font-size : .9rem;
-  padding-right : 1rem;
-  padding-left : 1rem;
-  padding-top : .5rem;
-  padding-bottom : .5rem;
+  animation: 600ms notification ease-in-out forwards;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  background: rgb(255, 145, 145);
+  color: rgb(190, 0, 0);
+  border: 0.05rem solid rgb(190, 0, 0);
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .success {
-  animation : 600ms notification ease-in-out forwards;
-  position : absolute;
-  top : 5rem;
-  right : 1rem;
-  background : rgb(185, 255, 210);
-  color : rgb(0, 145, 85);
-  border : .05rem solid rgb(185, 255, 210);
-  font-weight : 400;
-  font-size : .9rem;
-  padding-right : 1rem;
-  padding-left : 1rem;
-  padding-top : .5rem;
-  padding-bottom : .5rem;
+  animation: 600ms notification ease-in-out forwards;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
+  background: rgb(185, 255, 210);
+  color: rgb(0, 145, 85);
+  border: 0.05rem solid rgb(185, 255, 210);
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .notificationOut {
-  animation : 600ms notificationOut ease-out forwards;
+  animation: 600ms notificationOut ease-out forwards;
 }
 .info {
-  position : relative;
-  width : 95vw;
-  height : 70vh;
+  position: relative;
+  width: 95vw;
+  height: 70vh;
   display: flex;
-  flex-direction : column;
-  align-items : center;
-  padding-left : .2rem;
-  padding-right : .2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
   margin-left: auto;
-  margin-right : auto;
+  margin-right: auto;
 }
 .info img {
-  animation : 2600ms bounce linear infinite;
+  animation: 2600ms bounce linear infinite;
   max-width: 95%;
 }
 .info__full {
-  position : absolute;
-  bottom : 2rem;
-  height : auto;
+  margin-top: 4.5rem;
+  height: auto;
   min-width: 25%;
   background: #202020;
-  padding : 1.5rem;
-  font-weight : 400;
-  font-size : 1.2rem;
+  padding: 1.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   font-variant: small-caps;
   line-height: 1.8rem;
   word-spacing: 0.1rem;
   letter-spacing: 0.06rem;
-  
 }
-
 
 /* ========== Breakpoints ============ */
 
@@ -303,24 +301,24 @@ img#img4.mainImage {
     font-size: 1.6rem;
   }
   .info {
-    width : 95vw;
+    width: 95vw;
     display: flex;
-    flex-direction : row;
-    align-items : center;
-    padding-left : .8rem;
-    padding-right : .8rem;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
   .info img {
-    animation : 2600ms bounce linear infinite;
+    animation: 2600ms bounce linear infinite;
     max-width: 75%;
   }
   .info__full {
-    height : auto;
+    height: auto;
     min-width: 25%;
     background: #202020;
-    padding : 1.5rem;
-    font-weight : 400;
-    font-size : 1.5rem;
+    padding: 1.5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
     font-variant: small-caps;
     line-height: 2rem;
     word-spacing: 0.1rem;
@@ -342,25 +340,25 @@ img#img4.mainImage {
   }
 }
 @keyframes menuHover {
-    100% {
-        border: 0.2rem dashed gold;
-        transform: scale(0.9);
-    }
+  100% {
+    border: 0.2rem dashed gold;
+    transform: scale(0.9);
+  }
 }
 @keyframes notification {
   0% {
-    transform: translateX(10rem)
+    transform: translateX(10rem);
   }
   100% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 }
 @keyframes notificationOut {
   0% {
-    transform: translateX(0rem)
+    transform: translateX(0rem);
   }
   100% {
-    transform: translateX(20rem)
+    transform: translateX(20rem);
   }
 }
 @keyframes bounce {
