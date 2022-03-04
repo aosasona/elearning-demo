@@ -1,3 +1,4 @@
+/* =============== MAIN PAGE IMAGE SLIDER =============== */
 const mainImages = document.querySelectorAll(".mainImage");
 var currentIndex = 0; // current index counter
 
@@ -21,3 +22,11 @@ const imageSlide = () => {
 };
 
 setInterval(imageSlide, 2500); //initiate the function and run it every 2.5 seconds
+
+/* ================== Button Actions ================== */
+const startBtn = document.getElementById("startCourse"); //Start button
+const Menu = document.getElementById("menu"); //Menu page
+
+startBtn.addEventListener("click", () => {
+  Menu.scrollIntoView();
+});

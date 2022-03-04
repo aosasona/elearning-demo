@@ -12,47 +12,87 @@
       type="image/x-icon"
     />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- Fullpage CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+      integrity="sha512-4rPgyv5iG0PZw8E+oRdfN/Gq+yilzt9rQ8Yci2jJ15rAyBmF0HBE4wFjBkoB72cxBeg63uobaj1UcNt/scV93w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <!-- Formated using Prettier extension in VS code for readability -->
+
+    <section id="fullpage">
+      <div class="section">
+        <div class="mainImages">
+          <img
+            src="/images/L460_Range_Rover.png"
+            alt="L460"
+            id="img1"
+            class="mainImage"
+          />
+          <img
+            src="/images/L462_Discovery.png"
+            alt="L462"
+            id="img2"
+            class="mainImage hidden"
+          />
+          <img
+            src="/images/L560_Range_Rover_Velar.png"
+            alt="L560"
+            id="img3"
+            class="mainImage hidden"
+          />
+          <img
+            src="/images/L663_Defender.png"
+            alt="L663"
+            id="img4"
+            class="mainImage hidden"
+          />
+        </div>
+
+        <div class="intro">
+          This short course will give you brief information about the following
+          models: L460, L462, L560 & L663<button
+            class="btn-start"
+            id="startCourse"
+          >
+            Start Course
+          </button>
+        </div>
+      </div>
+
+      <!-- Car Selection page-->
+      <div class="section" id="menu">Hello world</div>
+    </section>
     <h1 id="mainHeader">
       <img src="/images/corporate-logo.png" alt="Logo" />Training Course
     </h1>
-    <div class="mainImages">
-      <img
-        src="/images/L460_Range_Rover.png"
-        alt="L460"
-        id="img1"
-        class="mainImage"
-      />
-      <img
-        src="/images/L462_Discovery.png"
-        alt="L462"
-        id="img2"
-        class="mainImage hidden"
-      />
-      <img
-        src="/images/L560_Range_Rover_Velar.png"
-        alt="L560"
-        id="img3"
-        class="mainImage hidden"
-      />
-      <img
-        src="/images/L663_Defender.png"
-        alt="L663"
-        id="img4"
-        class="mainImage hidden"
-      />
-    </div>
 
-    <div class="intro">
-      This short course will give you brief information about the following
-      models: L460, L462, L560 & L663<button class="btn-start" id="startCourse">
-        Start Course
-      </button>
-    </div>
-
+    <!-- Fullpage JavaScript-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"
+      integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Main JavaScript -->
     <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript">
+      new fullpage("#fullpage", {
+        //Settings
+        autoScrolling: true,
+        scrollHorizontally: false,
+        keyboardScrolling: false,
+        lazyLoading: true,
+        fixedElements: "#mainHead",
+        dragAndMove: false,
+      });
+
+      fullpage_api.setAllowScrolling(false);
+    </script>
   </body>
 </html>
