@@ -1,14 +1,23 @@
 const mainImages = document.querySelectorAll(".mainImage");
-const imageArray = [];
+var currentIndex = 0; // current index counter
 
-for (var i = 0; i < mainImages.length; i++) {
-  imageArray.push(i);
-  var imgId = "img" + (i + 1);
-  var formatImg = String(imgId);
+const imageSlide = () => {
+  let i;
 
-  const imgStyle = document.getElementById(formatImg);
-
-  if (imgStyle.classList.contains("hidden")) {
+  //Set all the images to not display (1 has been set to display by default)
+  for (i = 0; i < mainImages.length; i++) {
+    mainImages[i].style.display = "none";
   }
-}
 
+  currentIndex++; //increase the current index
+
+  //If the current index is larger than the mainImages array length, reset it to 0
+  currentIndex >= mainImages.length
+    ? (currentIndex = 0)
+    : (currentIndex = currentIndex);
+
+  //change the image to the current index to visible
+  mainImages[currentIndex].style.display = "block";
+};
+
+setInterval(imageSlide, 2000); //initiate the function and run it every 2 seconds

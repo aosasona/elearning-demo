@@ -13,7 +13,8 @@
       format("svg");
 }
 * {
-  font-family: "Helvetica Neue", "JLR Emeric ExtraLight", "Segoe UI", Roboto, Oxygen, "Open Sans", sans-serif;
+  font-family: "Helvetica Neue", "JLR Emeric ExtraLight", "Segoe UI", Roboto,
+    Oxygen, "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 html,
@@ -26,8 +27,8 @@ body {
 
 /* Top Bar */
 #mainHeader {
-position: sticky;
-top : 0;
+  position: sticky;
+  top: 0;
   width: 100%;
   text-align: center;
   font-weight: 400;
@@ -45,7 +46,7 @@ top : 0;
 }
 #mainHeader img {
   max-width: 20%;
-  padding-left: .8rem;
+  padding-left: 0.8rem;
   padding-right: 1rem;
 }
 
@@ -60,6 +61,7 @@ top : 0;
   align-items: center;
 }
 .mainImages img {
+  animation: 500ms slideInImg ease-in-out forwards;
   position: absolute;
   max-width: 100%;
 }
@@ -76,31 +78,32 @@ img#img4.mainImage {
   z-index: 3;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 .intro {
-    max-width: 85vw;
-    padding: 0.5rem;
-    color : #aaa;
-    font-variant: small-caps;
-    border : 0.15rem solid #606060;
-    text-align: center;
-    margin-left : auto;
-    margin-right : auto;
+  max-width: 85vw;
+  padding: 0.5rem;
+  color: #aaa;
+  font-variant: small-caps;
+  border: 0.15rem solid #606060;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-start {
-    width: 100%;
-    padding: 0.5rem;
-    color : #aaa;
-    background : transparent;
-    font-variant: small-caps;
-    border : 0.15rem solid #606060;
-    text-align: center;
-    margin-top : 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  color: #aaa;
+  background: transparent;
+  font-variant: small-caps;
+  border: 0.15rem solid #606060;
+  text-align: center;
+  margin-top: 1rem;
 }
-.btn-start:hover, .btn-start:focus {
-    background : #606060;
-    color : white;
+.btn-start:hover,
+.btn-start:focus {
+  background: #606060;
+  color: white;
 }
 
 /* ========== Breakpoints ============ */
@@ -126,5 +129,19 @@ img#img4.mainImage {
   }
   .mainImages {
     height: 65vh;
+  }
+}
+
+/* ========== Animations  ========== */
+
+/* Main page images animation */
+@keyframes slideInImg {
+  0% {
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
